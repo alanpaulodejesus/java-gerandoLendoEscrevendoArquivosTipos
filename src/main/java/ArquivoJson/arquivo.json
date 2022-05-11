@@ -1,0 +1,14 @@
+[
+  {
+    "login": "user 1",
+    "nome": "user One",
+    "senha": "senhaUser1",
+    "cpf": "4988484"
+  },
+  {
+    "login": "User 2",
+    "nome": "user Two",
+    "senha": "senhaUser2",
+    "cpf": "897878"
+  }
+]
