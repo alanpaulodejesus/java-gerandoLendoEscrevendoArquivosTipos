@@ -1,4 +1,4 @@
-package Arquivos;
+package ArquivosTxt;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -9,7 +9,7 @@ public class LerArquivoTxt {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        FileInputStream entradaDadoArquivo = new FileInputStream(new File("src/main/java/Arquivos/arquivo.txt"));
+        FileInputStream entradaDadoArquivo = new FileInputStream(new File("ArquivosTxt/arquivo.txt"));
 
         Scanner lerArquivo = new Scanner(entradaDadoArquivo, "UTF-8");
 

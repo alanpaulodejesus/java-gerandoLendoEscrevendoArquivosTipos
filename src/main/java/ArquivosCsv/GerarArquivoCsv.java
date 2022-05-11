@@ -1,4 +1,4 @@
-package Arquivos;
+package ArquivosCsv;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GerarArquivoTxt {
+public class GerarArquivoCsv {
 
     public static void main(String[] args) throws IOException {
 
@@ -30,7 +30,7 @@ public class GerarArquivoTxt {
         pessoas.add(pessoa2);
         pessoas.add(pessoa3);
 
-        File arquivo = new File("src/main/java/Arquivos/arquivo.txt");
+        File arquivo = new File("ArquivosCsv/arquivo.csv");
 
         if (arquivo.exists()){
             arquivo.createNewFile();
@@ -39,7 +39,7 @@ public class GerarArquivoTxt {
         FileWriter escreverNoArquivo = new FileWriter(arquivo);
 
         for (Pessoa p:pessoas){
-            escreverNoArquivo.write(p.getNome()+" ; "+p.getEmail()+" ; "+p.getIdade()+"\n");
+            escreverNoArquivo.write(p.getNome()+";"+p.getEmail()+";"+p.getIdade()+"\n");
         }
 
         /*

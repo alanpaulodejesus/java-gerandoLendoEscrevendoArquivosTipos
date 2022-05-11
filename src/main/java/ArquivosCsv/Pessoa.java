@@ -1,4 +1,4 @@
-package Arquivos;
+package ArquivosCsv;
 
 public class Pessoa {
 
